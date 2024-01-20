@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --cor-primaria: #044fd9;
+}
+
+/*----HEADER-----*/
+
+
+header .header{
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header .header a img{
+    width: 65px;
+    height: 65px;
+}
+
+header .header .navbar{
+    width: 300px;
+    
+}
+
+header .header .navbar .navMenu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header .header .navbar .navMenu .navItem .navLink{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    transition: 0.5s ease;
+    font-size: 14px;
+}
+
+header .header .navbar .navMenu .navItem .navLink:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+header .header .navbar .hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+
+header .header .navbar .hamburguer .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: var(--cor-primaria);
+    transition: all 0.3s ease-in-out;
+}
+
+/*-----RESPONSIVE-- TELA 768PX*/
+
+@media(max-width: 768px){
+    header .header .navbar .hamburguer{
+        display: block;
+    }
+
+    header .header .navbar .hamburguer.ativar .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    header .header .navbar .hamburguer.ativar .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    header .header .navbar .hamburguer.ativar .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header .header .navbar .navMenu{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        height: 100px;
+        gap: 0;
+        border: 0 0 20px 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background-color: whitesmoke;
+    }
+
+    header .header .navbar .navMenu .navLink{
+        margin: 16px 0;
+    }
+
+    header .header .navbar .navMenu.ativar{
+        left: 0;
+    }
+}
