@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coders Criativos</title>
     <link rel="stylesheet" href="styles.css">
+    
+    
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/267d026f07.js" crossorigin="anonymous"></script> -->
 </head>
@@ -20,6 +22,7 @@
             <nav class="navbar">
                 <ul class="navMenu">
                     <li class="navItem"><a href="#" class="navLink">Home</a></li>
+                    <li class="navItem"><a href="#" class="navLink">Serviços</a></li>
                     <li class="navItem"><a href="#" class="navLink">Contato</a></li>
                     <li class="navItem"><a href="#" class="navLink">Blog</a></li>
                     <li class="navItem"><a href="#" class="navLink">Sobre</a></li>
@@ -38,10 +41,12 @@
 
     <!-------MAIN----->
     <main>
+
+        <!---DIV LADO ESQUERDO-->
         <div class="container">
             <!-- <img src="/Imagens/Logo.png" class="fundo" alt="fundo"> -->
             <div class="circulo">
-                <p id="para">Nosso mundo nos aguarda <br>para muito mais</p>
+                <img src="./Imagens/celularFundo.png" alt="celular-Sobre">
                 <div class="estatico"><p>Criatividade começa com uma</p> </div>
                 
                 <ul class="dinamico">
@@ -52,9 +57,32 @@
                 </ul>
             </div>
         </div>
-
            
+
+        <!--DIV LADO DIREITO-->
+        <div class="container2">
+
+            <div class="texto">
+                <h2>Case dos Serviços</h2>
+            </div>
+            <div class="quadrado">
+
+                <div class="carrossel" id="img">
+                    <img src="./Imagens/Main1/concepção (1).jpeg" alt="concepção">
+                    <img src="./Imagens/Main1/desenvolvimento.jpeg" alt="desenvolvimento">
+                    <img src="./Imagens/Main1/landing page.jpeg" alt="landing-page">
+                    <img src="./Imagens/Main1/site institucional.jpeg" alt="site-instituicional">
+                </div>
+
+            </div>
+
+            <div class="botoes">
+                <button onclick="sliderVoltar()">Voltar</button>
+                <button onclick="sliderProximo()">Proximo</button>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
+   
 </body>
 </html>

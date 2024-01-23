@@ -12,7 +12,7 @@
     --cor-primaria: #044fd9;
 }
 
-/*----HEADER-----*/
+/*-----------------------HEADER-----*/
 
 
 header .header{
@@ -31,7 +31,7 @@ header .header a img{
 }
 
 header .header .navbar{
-    width: 300px;
+    width: 400px;
     
 }
 
@@ -71,7 +71,7 @@ header .header .navbar .hamburguer .bar{
     transition: all 0.3s ease-in-out;
 }
 
-/*-----RESPONSIVE-- TELA 768PX*/
+/*-------------------RESPONSIVE-- TELA 768PX*/
 
 @media(max-width: 768px){
     header .header .navbar .hamburguer{
@@ -94,7 +94,7 @@ header .header .navbar .hamburguer .bar{
         position: fixed;
         left: 100%;
         top: 70px;
-        height: 100px;
+        height: 200px;
         gap: 0;
         border: 0 0 20px 20px;
         text-align: center;
@@ -113,12 +113,20 @@ header .header .navbar .hamburguer .bar{
     }
 }
 
-/*----MAINN---*/
+/*----------------MAINN--------------*/
 
 main{
     width: 100%;
+    height: 100vh;
+    display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
+    
+}
+
+main .container{
+    width: 50%;
+    
 }
 
 main .circulo{
@@ -137,12 +145,29 @@ main .circulo{
     text-align: center;
 }
 
-main .circulo #para{
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin: 0 0 100px 400px;
+main .circulo img{
+    width: 250px;
+    margin-left: 400px;
+    animation: flutuacao 4s ease-in-out infinite;
+    margin-top: -150px;
+    
 }
+
+@keyframes flutuacao{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
 
 main .circulo .estatico{
     color: #fff;
@@ -150,11 +175,14 @@ main .circulo .estatico{
     font-weight: 500;
     text-align: center;
     margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     
 }
 
 main .circulo .dinamico{
     margin-left: 400px;
+    margin-top: -80px;
     line-height: 39px;
     height: 39px;
     overflow: hidden;
@@ -202,17 +230,78 @@ main .circulo .dinamico{
         margin: 0 -50px 0 50px;
     }
 }
-/* main .img{
-    width: 100%;
+
+/*------MAIN LADO DIREITO-------*/
+
+main .container2{
+    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-main .fundo{
-    position: absolute;
-    border-radius: 50%;
-    object-fit: cover;
-    top: -250px;
-    z-index: -1;
+main .container2 .texto{
+    margin: 50px 0 20px 0;
+    width: 500px;
+    font-size: 19px;
+}
+
+
+main .container2 .quadrado{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
     
-} */
+}
+
+main .container2 .quadrado .carrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+main .container2 .quadrado .carrossel img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+main .container2 .botoes{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    
+}
+
+main .container2 .botoes button{
+    background-color: #044fd9;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container2 .botoes button:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    background-color: #0e029c;
+}
+
+main .container2 .botoes button:not(:hover){
+    transform: scale(1);
+    transition: 1s;
+    background-color: #044fd9;
+}
+
+
+
+
