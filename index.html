@@ -4,8 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coders Criativos</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/267d026f07.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    
+    <!------HEADER----->
+    <header>
+        <div class="header">
+            <!--Logo----->
+            <a href="#">
+                <img src="/Imagens/Logo.png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <ul class="navMenu">
+                    <li class="navItem"><a href="#" class="navLink">Home</a></li>
+                    <li class="navItem"><a href="#" class="navLink">Serviços</a></li>
+                    <li class="navItem"><a href="#" class="navLink">Contato</a></li>
+                    <li class="navItem"><a href="#" class="navLink">Blog</a></li>
+                    <li class="navItem"><a href="#" class="navLink">Sobre</a></li>
+                </ul>
+
+                <div class="hamburguer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-------MAIN----->
+    <main>
+
+        <!---DIV LADO ESQUERDO-->
+        <div class="container">
+            <!-- <img src="/Imagens/Logo.png" class="fundo" alt="fundo"> -->
+            <div class="circulo">
+                <img src="./Imagens/celularFundo.png" alt="celular-Sobre">
+                <div class="estatico"><p>Criatividade começa com uma</p> </div>
+                
+                <ul class="dinamico">
+                    <li><span>faísca</span></li>
+                    <li><span>concepção</span></li>
+                    <li><span>inspiração</span></li>
+                    <li><span>inovação</span></li>
+                </ul>
+            </div>
+        </div>
+           
+
+        <!--DIV LADO DIREITO-->
+        <div class="container2">
+
+            <div class="texto">
+                <h2>Case dos Serviços</h2>
+                <p>Imagens Ilustrativa</p>
+            </div>
+            <div class="quadrado">
+
+                <div class="carrossel" id="img">
+                    <img src="./Imagens/Main1/concepção (1).jpeg" alt="concepção">
+                    <img src="./Imagens/Main1/desenvolvimento.jpeg" alt="desenvolvimento">
+                    <img src="./Imagens/Main1/landing page.jpeg" alt="landing-page">
+                    <img src="./Imagens/Main1/site institucional.jpeg" alt="site-instituicional">
+                </div>
+
+            </div>
+
+            <div class="botoes">
+                <button onclick="sliderVoltar()">Voltar</button>
+                <button onclick="sliderProximo()">Proximo</button>
+            </div>
+        </div>
+    </main>
+
+    <!------MAIN 2-->
+
+    <section>
+        <div class="main2">
+            <div class="titulo">
+                <h1>Serviços</h1>
+            </div>
+
+            <div class="subTitulo">
+                <h3>Concepção</h3>
+                <h3>Desenvolvimento</h3>
+                <h3>Landing Page</h3>
+                <h3>Site institucional</h3>
+            </div>
+
+            <div class="servicos">
+                
+                <div class="box">
+                    <img src="./Imagens/Main1/concepção (1).jpeg" alt="concepção" class="imgBox">
+                </div>
+                <div class="box">
+                    <img src="./Imagens/Main1/desenvolvimento.jpeg" alt="desenvolvimento" class="imgBox">
+                </div>
+                <div class="box">
+                    <img src="./Imagens/Main1/landing page.jpeg" alt="landing-page" class="imgBox">
+                </div>
+                <div class="box">
+                    <img src="./Imagens/Main1/site institucional.jpeg" alt="site-instituicional" class="imgBox">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <main>
+        <div class="container3">
+            <div class="sobreEsquerda">
+                <!----Sobre nós-->
+                <div class="tituloContainer3">
+                    <h1>
+                        Sobre nós
+                    </h1>
+                </div>
+
+                <div class="sobre">
+
+                    <img src="./Imagens/Main2/Untitled.png" alt="sobre nos">
+                    <p>Somos um grupo formado por jovens estudantes focados na solução inventiva para promover a diversidade e inclusão de ideas relacionadas à tecnologia.</p>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+   
 </body>
 </html>
