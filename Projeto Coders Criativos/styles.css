@@ -302,6 +302,121 @@ main .container2 .botoes button:not(:hover){
     background-color: #044fd9;
 }
 
+/*------MAIN 2-------------*/
+section .main2{
+    width: 100%;
+    background-color: #fff;
+    height: 650px;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .main2 .titulo{
+    margin-top: 50px;
+}
+
+section .main2 .titulo h1{
+    font-size: 35px;
+}
+
+section .main2 .subTitulo{
+    width: 100%;
+    height: 40px;
+    
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .main2 .subTitulo h3{
+    font-size: 20px;
+}
+
+section .main2 .subTitulo h3:nth-child(1){
+    margin-left: -60px;
+    
+}
+
+section .main2 .subTitulo h3:nth-child(2){
+    /* margin-left: -60px;
+    background-color: blue; */
+}
+
+section .main2 .subTitulo h3:nth-child(3){
+    margin-left: -70px;
+    
+}
+
+
+section .main2 .servicos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+section .main2 .servicos .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+section .main2 .servicos .box .imgBox{
+    width: 280px;
+    height: 380px;
+    
+    z-index: 1;
+}
+
+section .main2 .servicos .box:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+section .main2 .servicos .box:not(:hover){
+    transform: scale(1);
+    transition: 1s;
+}
+
+section .main2 .servicos .box::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background-color: #ededed;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: bordarAnimada 8s linear infinite;
+}
+
+section .main2 .servicos .box::after{
+    content: "";
+    position: absolute;
+    inset: 10px;
+    background-color: #0e029c;
+    border-radius: 16px;
+}
+
+@keyframes bordarAnimada{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 
 
