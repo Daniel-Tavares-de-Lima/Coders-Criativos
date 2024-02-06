@@ -417,7 +417,7 @@ section .main2 .servicos .box::after{
 }
 
 
-/**------------------MAIN 3------*/
+/**------------------MAIN 3---ESQUERDA---*/
 
 .container3{
     width: 100%;
@@ -459,10 +459,9 @@ section .main2 .servicos .box::after{
     height: 300px;
     border-radius: 10px;
 }
-/*-----------------*/
+/*-------------MAIN 3 DIREITA----*/
 
 .container3 .sobreDireita{
-    
     width: 50%;
     height: 600px;
 }
@@ -493,6 +492,10 @@ section .main2 .servicos .box::after{
     color: #fff;
     font-size: 20px;
 }
+
+/*---------------------*/
+
+
 
 
 
