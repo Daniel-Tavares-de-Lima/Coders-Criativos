@@ -428,7 +428,7 @@ section .main2 .servicos .box::after{
 
 .container3 .sobreEsquerda{
     width: 50%;
-    height: 800px;
+    height: 600px;
 }
 
 
@@ -495,7 +495,125 @@ section .main2 .servicos .box::after{
 
 /*---------------------*/
 
+section{
+    height: 100vh;
+    background-color: red;
+    margin-top: -335px;
+}
+ .engloba{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+ .engloba .titulo h2{
+    color: #595959;
+    margin-top: 20px;
+}
+
+.engloba .titulo .underline{
+    margin-top: 15px;
+    background-color: #878ff5;
+    width: 190px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.engloba .review{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.engloba .review .img-container{
+    width: 150px;
+    height: 150px;
+    background-color: #6670f8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engloba .review .img-container img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.engloba .review h4{
+    font-size: 20px;
+}
+
+.engloba .review #job{
+    font-size: 18px;
+    font-weight: 300;
+    color: #6670F8;
+    margin: 5px 0px 10px 0px;
+}
+
+.engloba .review #info{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.engloba .review .button-container{
+    display: flex;
+    width: 100px;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.engloba .review .button-container button i{
+    font-size: 20px;
+    color: #878ff5;
+    cursor: pointer;
+}
+/*-----HOVER----*/
+.engloba .review .button-container button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    color: #6670F8;
+}
+
+.engloba .review .button-container button:not(:hover){
+    transform: scale(1);
+    transition: 1s;
+    color: #878ff5;
+}
+/*--------------*/
+
+.engloba .review .random-btn{
+    background-color: #878ff5;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+/*--------------*/
+.engloba .review .random-btn:hover{
+    transform: scale(1.03);
+    transition: 1s;
+    background-color: #6670F8;
+}
+
+.engloba .review .random-btn:not(:hover){
+    transform: scale(1);
+    transition: 1s;
+    
+}
+/*--------------*/
 
 
 
