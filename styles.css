@@ -117,15 +117,15 @@ header .header .navbar .hamburguer .bar{
 
 main{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
-    /* position: relative; */
     
 }
 
 main .container{
     width: 50%;
+    height: 100vh;
     
 }
 
@@ -493,15 +493,16 @@ section .main2 .servicos .box::after{
     font-size: 20px;
 }
 
-/*---------------------*/
+/*-----------MAIN 4 ESQUERDA--------------*/
 
 section{
-    height: 100vh;
-    background-color: red;
-    margin-top: -335px;
+    width: 100%;
+    display: flex;
 }
  .engloba{
     width: 50%;
+    height: 700px;
+    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -616,7 +617,26 @@ section{
 /*--------------*/
 
 
+/*-----------MAIN 4 DIREITA--------------*/
 
+
+/* .engloba-Direita{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.engloba-Direita .circulo{
+    width: 800px;
+    height: 800px;
+    background-color: #0e029c;
+    border-radius: 50%;
+    position: absolute;
+    left: 400px;
+    bottom: 10px;
+} */
 
 
 
