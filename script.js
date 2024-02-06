@@ -100,10 +100,21 @@ function mostrarPessoa(){
     info.textContent = item.texto
 }
 
+//--proximo
 nextBtn.addEventListener("click", function(){
     contagem++
     if(contagem > reviews.length - 1){
         contagem = 0
     }
-    showPerson()
+    mostrarPessoa()
 })
+
+//---anterior
+prevBtn.addEventListener("click", function(){
+    contagem--
+    if(contagem < 0){
+        contagem = reviews.length - 1
+    }
+    mostrarPessoa()
+})
+
