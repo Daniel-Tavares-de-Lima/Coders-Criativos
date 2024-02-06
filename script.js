@@ -50,3 +50,60 @@ setInterval(sliderProximo, 3000)
 
 //-----REVIEWS
 
+const reviews = [
+    {
+        id: 1,
+        nome: "Daniel Tavares",
+        job: "FullStack Developer",
+        img: "./Imagens/Section-Main3/perfil.jpg",
+        texto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    },
+    {
+        id: 2,
+        nome: "João Pedro",
+        job: "Analista de Projetos",
+        img: "./Imagens/Section-Main3/Perfil2.png",
+        texto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    },
+    {
+        id: 3,
+        nome: "Carlos Jonathan",
+        job: "Analista de Projetos",
+        img: "./Imagens/Section-Main3/Perfil3.png",
+        texto: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+    }
+
+]
+
+const img2 = document.getElementById("person-img")
+const autor = document.getElementById("autor")
+const job = document.getElementById("ocupacao")
+const info = document.getElementById("info")
+
+const prevBtn = document.querySelector(".prev-btn")
+const nextBtn = document.querySelector(".next-btn")
+const randomBtn = document.querySelector(".random-btn")
+
+//-- Começar a setar os itens
+let contagem = 0
+
+//-----Carregar inicialização do item
+window.addEventListener("DOMContentLoaded", function(){
+    mostrarPessoa()
+})
+
+function mostrarPessoa(){
+    const item = reviews[contagem]
+    img2.src = item.img
+    autor.textContent = item.nome
+    job.textContent = item.job
+    info.textContent = item.texto
+}
+
+nextBtn.addEventListener("click", function(){
+    contagem++
+    if(contagem > reviews.length - 1){
+        contagem = 0
+    }
+    showPerson()
+})
